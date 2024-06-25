@@ -112,23 +112,97 @@ footer p {
     font-size: 0.9rem;
 }
 
+/* Scroll to Top Button */
 .scroll-to-top-btn {
-  position: fixed;
-  bottom: 20px; /* Adjust position as needed */
-  right: 20px; /* Adjust position as needed */
-  background-color: #77b300; /* White background */
-  color: var(--dark-blue); /* Text color */
-  padding: 10px 20px; /* Adjust padding as needed */
-  border-radius: 5px;
-  text-decoration: none;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  display: inline-block;
-  cursor: pointer;
-  z-index: 1000; /* Ensure it's above other content */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #77b300;
+    color: var(--dark-blue);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+    cursor: pointer;
+    z-index: 1000;
 }
 
 .scroll-to-top-btn:hover {
-  background-color: var(--midnight-blue);
-  color: var(--pale-aqua);
-  transform: translateY(-2px);
+    background-color: var(--midnight-blue);
+    color: var(--pale-aqua);
+    transform: translateY(-2px);
+}
+
+/* Media Queries for Tablet and Mobile */
+@media (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+
+    section {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding-top: 20px;
+        min-height: 50px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header nav ul li {
+        margin: 0 8px;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+    }
+
+    section h3 {
+        font-size: 1.3rem;
+    }
+
+    section pre code {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+    }
+
+    header {
+        padding-top: 15px;
+        min-height: 40px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header nav ul li {
+        margin: 0 6px;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    section h3 {
+        font-size: 1.2rem;
+    }
+
+    section pre code {
+        font-size: 0.8rem;
+    }
 }
