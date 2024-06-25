@@ -111,3 +111,24 @@ footer p {
     margin: 0;
     font-size: 0.9rem;
 }
+
+.scroll-to-top-btn {
+  position: fixed;
+  bottom: 20px; /* Adjust position as needed */
+  right: 20px; /* Adjust position as needed */
+  background-color: #77b300; /* White background */
+  color: var(--dark-blue); /* Text color */
+  padding: 10px 20px; /* Adjust padding as needed */
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+  cursor: pointer;
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.scroll-to-top-btn:hover {
+  background-color: var(--midnight-blue);
+  color: var(--pale-aqua);
+  transform: translateY(-2px);
+}
